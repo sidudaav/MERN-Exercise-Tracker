@@ -11,7 +11,7 @@ const ViewAllExercisesPage = () => {
     }, [])
 
     const getAllExercises = async () => {
-        const allExercises = await axios.get('http://localhost:5000/exercises')
+        const allExercises = await axios.get('/exercises')
         setExercises(allExercises.data)
     }
 

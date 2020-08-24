@@ -13,7 +13,7 @@ const AddUserPage = () => {
     }, [])
 
     const getUsers = async () => {
-        const allUsers = await axios.get('http://localhost:5000/users/')
+        const allUsers = await axios.get('/users')
         setAllUsers(allUsers.data)
     }
 
@@ -27,7 +27,7 @@ const AddUserPage = () => {
     }
 
     const addUser = async (newUser) => {
-        axios.post('http://localhost:5000/users/add', newUser)
+        axios.post('/users/add', newUser)
         console.log('User Added Successfully!')
     }
 

@@ -14,7 +14,7 @@ const AddExercisePage = () => {
     }, [])
 
     const getUsers = async () => {
-        const allUsers = await axios.get('http://localhost:5000/users/')
+        const allUsers = await axios.get('/users')
         setAllUsers(allUsers.data)
     }
 
@@ -32,7 +32,7 @@ const AddExercisePage = () => {
     }
 
     const addExercise = async (newExercise) => {
-        axios.post('http://localhost:5000/exercises/add', newExercise)
+        axios.post('/exercises/add', newExercise)
         console.log('Exercise Added Successfully!')
     }
 
