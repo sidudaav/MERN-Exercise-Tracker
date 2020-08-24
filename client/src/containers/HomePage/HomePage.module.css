@@ -1,0 +1,14 @@
+.description__container {
+    margin: 80px 10%;
+    max-width: 60%;
+    font-size: 150%;
+    line-height: 1.5;
+}
+
+.description__container h1 {
+    color: lightgreen;
+}
+
+.description__container p {
+    color: white;
+}

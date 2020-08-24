@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+    color: #edf0f1;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all ease-in 200ms;
+}
+
+.nav__links li:hover {
+    color: lightblue
+}
+
+.brand {
+    display: inline-block;
+    font-weight: 900;
+    color: lightgreen;
+    text-decoration: none;
+    transition: all ease-in 200ms;
+}
+
+.brand:hover {
+    color: rgb(0, 165, 0);
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}

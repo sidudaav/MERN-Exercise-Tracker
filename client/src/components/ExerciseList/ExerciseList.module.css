@@ -1,0 +1,8 @@
+.ExerciseList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+    column-gap: 70px;
+    max-width:  80%;
+    margin: 80px auto;
+}

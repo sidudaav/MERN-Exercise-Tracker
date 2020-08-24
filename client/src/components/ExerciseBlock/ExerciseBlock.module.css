@@ -1,0 +1,8 @@
+.ExerciseBlock {
+    border: 3px solid white;
+    padding: 0 30px;
+}
+
+.username, .description, .duration {
+    color: lightgreen
+}
