@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(logger('dev'))
 
-const uri = process.env.ATLAS_URI || "mongodb://user:sidiscool123@ds161764.mlab.com:61764/heroku_wqqzb9rx"
+const uri = process.env.ATLAS_URI || "mongodb://user:sidiscool123@ds021462.mlab.com:21462/heroku_gr9trmnr"
 
 mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true})
 
