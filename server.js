@@ -22,6 +22,14 @@ const usersRouter = require('./routers/users')
 app.use('/exercises', exercisesRouter)
 app.use('/users', usersRouter)
 
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'), function(err) {
+        if (err) {
+            res.status(500).send(err)
+        }
+    })
+})
+
 const PORT = process.env.PORT || 5000
 
 if (process.env.NODE_ENV === "production") {
