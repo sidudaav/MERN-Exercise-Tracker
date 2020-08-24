@@ -1,8 +1,8 @@
-require('./node_modules/dotenv/types').config()
-const express = require('./node_modules/express')
+require('dotenv').config()
+const express = require('express')
 const mongoose = require('mongoose')
-const cors = require('./node_modules/cors/lib')
-const logger = require('./node_modules/morgan')
+const cors = require('cors')
+const logger = require('morgan')
 
 const app = express()
 app.use(cors())
